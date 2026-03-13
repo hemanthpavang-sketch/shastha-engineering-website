@@ -1,10 +1,10 @@
 {
   "name": "@caffeine/template-app",
   "type": "module",
+  "packageManager": "pnpm@10.0.0",
   "engines": {
-    "node": ">=16.0.0",
-    "pnpm": ">=7.0.0",
-    "npm": "please use pnpm"
+    "node": "20.x",
+    "pnpm": "10.x"
   },
   "scripts": {
     "build": "pnpm -r --if-present run build",
