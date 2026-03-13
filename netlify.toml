@@ -1,0 +1,11 @@
+[build]
+  command = "npm install -g pnpm && pnpm --dir src/frontend install --no-frozen-lockfile && pnpm --dir src/frontend build"
+  publish = "src/frontend/dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
